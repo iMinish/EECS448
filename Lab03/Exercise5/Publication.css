@@ -1,1 +1,19 @@
+body
+{
+  background-size: 100%;
+  background-color: orange;
+}
 
+a
+{
+  color: black;
+  background-color: white;
+  font-size: 22;
+  font-family: monospace;
+}
+
+a:hover
+{
+  color: white;
+  background-color: black;
+}
