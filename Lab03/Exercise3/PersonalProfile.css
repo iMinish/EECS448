@@ -1,1 +1,45 @@
+p
+{
+  background-color: blue;
+  color: white;
+  font-size: 22;
+  font-family: arial;
+}
 
+body
+{
+  background-color: crimson;
+  background-image: url(gif1.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a
+{
+  background-color: blue;
+  color: white;
+}
+
+a:hover
+{
+  background-color: blue;
+  color: crimson;
+}
+
+p.kstate
+{
+  color: purple;
+  background-color: black;
+}
+
+h1
+{
+  font-size: 80;
+  color: white;
+}
+
+h2
+{
+  color: white;
+}
