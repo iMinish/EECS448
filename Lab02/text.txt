@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+master text
+||||||| merged common ancestors
+=======
+TEST TEXT
+>>>>>>> test
