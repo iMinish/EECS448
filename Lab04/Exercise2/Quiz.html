@@ -1,1 +1,133 @@
+<?php include 'Quiz.php';?>
 
+<html>
+  <head>
+  </head>
+  <body>
+    <form action="Quiz.php" method="post">
+      <ol>
+        <li>
+          <h2>What course is this lab for?</h2>
+
+          <div>
+            <input type="radio" name="q1answers" value="A"/>
+            <label for="q1answersA">A) EECS 210</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q1answers" value="B"/>
+            <label for="q1answersB">B) EECS 368</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q1answers" value="C"/>
+            <label for="q1answersC">C) EECS 388</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q1answers" value="D"/>
+            <label for="q1answersD">D) EECS 448</label>
+          </div>
+        </li>
+
+        <li>
+          <h2>What lab is this exercise for?</h2>
+
+          <div>
+            <input type="radio" name="q2answers" value="A"/>
+            <label for="q2answersA">A) Lab 01</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q2answers" value="B"/>
+            <label for="q2answersB">B) Lab 02</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q2answers" value="C"/>
+            <label for="q2answersC">C) Lab 03</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q2answers" value="D"/>
+            <label for="q2answersD">D) Lab 04</label>
+          </div>
+        </li>
+
+        <li>
+          <h2>Who is the professor for this course?</h2>
+
+          <div>
+            <input type="radio" name="q3answers" value="A"/>
+            <label for="q3answersA">A) Dr. Gibbons</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q3answers" value="B"/>
+            <label for="q3answersB">B) Dr. Johnson</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q3answers" value="C"/>
+            <label for="q3answersC">C) Dr. Gill</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q3answers" value="D"/>
+            <label for="q3answersD">D) Dr. Yun</label>
+          </div>
+        </li>
+
+        <li>
+          <h2>What is the name of this class?</h2>
+
+          <div>
+            <input type="radio" name="q4answers" value="A"/>
+            <label for="q4answersA">A) Embedded Systems</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q4answers" value="B"/>
+            <label for="q4answersB">B) Software Engineering</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q4answers" value="C"/>
+            <label for="q4answersC">C) Discrete Structures</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q4answers" value="D"/>
+            <label for="q4answersD">D) Programming Paradigms</label>
+          </div>
+        </li>
+
+        <li>
+          <h2>What was the first project for this class?</h2>
+
+          <div>
+            <input type="radio" name="q5answers" value="A"/>
+            <label for="q5answersA">A) Chess</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q5answers" value="B"/>
+            <label for="q5answersB">B) Blackjack</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q5answers" value="C"/>
+            <label for="q5answersC">C) Battleship</label>
+          </div>
+
+          <div>
+            <input type="radio" name="q5answers" value="D"/>
+            <label for="q5answersD">D) Uno</label>
+          </div>
+        </li>
+      </ol>
+
+      <input type="submit" value="Submit Quiz"/>
+    </form>
+</body>
+</html>
