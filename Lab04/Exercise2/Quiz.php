@@ -1,4 +1,7 @@
 <?php
+  error_reporting(E_ALL);
+  ini_set("display_errors", 1);
+
   $answer1 = $_POST["q1answers"];
   $answer2 = $_POST["q2answers"];
   $answer3 = $_POST["q3answers"];
