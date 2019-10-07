@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Rob's EECS448 Web Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+  <body>
+    <form action="customerBackend.php" method="post">
+      <div align="center">
+        <h2>Web Store Credentials</h2>
+        Username (E-Mail): <input type="email" name="username" required>
+        Password: <input type="password" name="password" required>
+      </div>
+
+      <div>
+        <h2 align="center">Web Store Stock</h2>
+        <table width="100%">
+          <tr>
+            <th>Burger ($5.00)</th>
+            <th>Chicken Tenders and Fries ($10.00)</th>
+            <th>Glass of Filtered Water ($15.00)</th>
+          </tr>
+          <tr>
+            <td align="center"><img src="Pictures/burger.jpg" alt="Burger" width="400" height="400"></td>
+            <td align="center"><img src="Pictures/chicken.jpg" alt="Chicken Tenders and Fries" width="400" height="400"></td>
+            <td align="center"><img src="Pictures/water.jpg" alt="Glass of Filtered Water" width="400" height="400"></td>
+          </tr>
+          <tr>
+            <td align="center">Quantity: <input type="number" min="0" name="burger" required></td>
+            <td align="center">Quantity: <input type="number" min="0" name="chicken" required></td>
+            <td align="center">Quantity: <input type="number" min="0" name="water" required></td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <h2 align="center">Web Store Shipping Type</h2>
+        <table width="100%">
+          <tr>
+            <td align="center">Seven Day (Free) <input type="radio" name="shipping" value="seven" required></td>
+            <td align="center">Overnight ($50.00) <input type="radio" name="shipping" value="overnight"></td>
+            <td align="center">Three Day ($5.00) <input type="radio" name="shipping" value="three"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div align="center">
+        <br>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+      </div>
+    </form>
+</body>
+</html>
