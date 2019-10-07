@@ -1,4 +1,7 @@
 <?php
+  error_reporting(E_ALL);
+  ini_set("display_errors", 1);
+
   echo "<table border=\"1\">";
 
   for($row = 0; $row <= 100; $row++)
@@ -15,18 +18,7 @@
         }
         else
         {
-          if($col >= 100)
-          {
-            echo "<td>$col</td>";
-          }
-          else if($col >= 10)
-          {
-            echo "<td>$col</td>";
-          }
-          else
-          {
-            echo "<td>$col</td>";
-          }
+          echo "<td>$col</td>";
         }
       }
       else
