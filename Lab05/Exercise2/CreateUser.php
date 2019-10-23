@@ -1,6 +1,5 @@
 <?php
   $mysqli = new mysqli("mysql.eecs.ku.edu", "rob.chirpich", "Ah4poo4a", "robchirpich");
-  $newUser = $_POST["newUser"];
 
   /* check connection */
   if($mysqli->connect_errno) {
@@ -8,6 +7,7 @@
     exit();
   }
 
+  $newUser = $_POST["newUser"];
   $query = "SELECT * FROM Users WHERE user_id = '$newUser'";
   $result = $mysqli->query($query);
 
