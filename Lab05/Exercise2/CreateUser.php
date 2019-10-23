@@ -11,12 +11,13 @@
   $query = "SELECT * FROM Users WHERE user_id = '$newUser'";
   $result = $mysqli->query($query);
 
-  if($nweUser == NULL) {
+  if($newUser == NULL) {
     printf("Enter a valid Username.\n");
-  } else if() {
-      
+  } else if(mysqli_num_rows($result) > 0) {
+    printf("This Username has already been taken.\n");
   } else {
-
+    $mysqli->query("INSERT INTO Users (user_id) VALUES ('$newUser')");
+    printf("Username successfully added to the database.\n");
   }
 
   $mysqli->close(); /* close connection */
