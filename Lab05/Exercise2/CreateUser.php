@@ -1,5 +1,6 @@
 <?php
   $mysqli = new mysqli("mysql.eecs.ku.edu", "rob.chirpich", "Ah4poo4a", "robchirpich");
+  $newUser = $_POST["newUser"];
 
   /* check connection */
   if($mysqli->connect_errno) {
@@ -7,11 +8,10 @@
     exit();
   }
 
-  $newUser = $_POST["newUser"];
   $query = "SELECT * FROM Users WHERE user_id = '$newUser'";
   $result = $mysqli->query($query);
 
-  if($newUser == NULL) {
+  if($newUser == NULL || $newUser == "") {
     printf("Enter a valid Username.\n");
   } else if(mysqli_num_rows($result) > 0) {
     printf("This Username has already been taken.\n");
