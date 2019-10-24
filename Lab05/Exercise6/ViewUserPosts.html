@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View User Posts</title>
+  </head>
+  <body>
+    <form action="ViewUserPosts.php" method="post">
+      <?php
+        $mysqli = new mysqli("mysql.eecs.ku.edu", "rob.chirpich", "Ah4poo4a", "robchirpich");
+        $query = mysqli_query($mysqli, "SELECT * FROM Users");
+
+        print '<select name="user"><option>Users</option>';
+
+        while($result = mysqli_fetch_array($query)) {
+          print '<option value="'.$result['user_id'].'">' .$result['user_id']. '</option>';
+        }
+
+        print '</select><input type="submit" value="View User Posts">';
+        $result->free(); /* free result set */
+        $mysqli->close(); /* close connection */
+      ?>
+    </form>
+  </body>
+</html>
