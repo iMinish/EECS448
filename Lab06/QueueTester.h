@@ -6,6 +6,7 @@
 **/
 #ifndef QueueTester_h
 #define QueueTester_h
+#include <iostream>
 #include "Queue.h"
 
 class QueueTester
@@ -29,5 +30,3 @@ private:
   void test13();
 };
 #endif /* QueueTester_h */
-
-
