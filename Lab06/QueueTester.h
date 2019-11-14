@@ -24,6 +24,10 @@ private:
   void test08();
   void test09();
   void test10();
+  void test11();
+  void test12();
+  void test13();
 };
 #endif /* QueueTester_h */
+
 
