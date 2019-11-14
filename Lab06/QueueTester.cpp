@@ -179,8 +179,8 @@ void QueueTester::test13() // This test is supplementary proof that enqueue() is
   for(int i = 1; i <= 5; i++)
     testQueue->dequeue(); // FRONT OF QUEUE [5,4,3,2,1] BACK OF QUEUE
   if(testQueue->peekFront() == 5)
-    std::cout << "[TEST #13] Does calling peekFront() on a Queue AFTER enqueing 10 elements and dequeing 5 elements return the FRONT element of the Queue? FAILED\n";
+    std::cout << "[TEST #13] Does calling peekFront() on a Queue AFTER enqueing 10 elements and dequeing 5 elements returns the FRONT element of the Queue? FAILED\n";
   else
-    std::cout << "[TEST #13] Does calling peekFront() on a Queue AFTER enqueing 10 elements and dequeing 5 elements return the FRONT element of the Queue? PASSED\n";
+    std::cout << "[TEST #13] Does calling peekFront() on a Queue AFTER enqueing 10 elements and dequeing 5 elements returns the FRONT element of the Queue? PASSED\n";
   delete testQueue;
 }
