@@ -1,1 +1,14 @@
+Bug List:
 
+Enqueue() is a bugged function that causes the program to operate more as a Stack rather than a Queue.
+Because of this bug inside of enqueue(), it can appear that either peekFront() or dequeue() are buggy as well,
+but supplementary tests (TESTS 10-14) show that enqueue() is causing these two functions to provide incorrect
+results in certain situations.
+
+Using test13() as an example:
+enqueue 10 elements --> FRONT OF QUEUE [10,9,8,7,6,5,4,3,2,1] BACK OF QUEUE
+dequeue 5 elements --> FRONT OF QUEUE [5,4,3,2,1] BACK OF QUEUE
+
+This means that if enqueue() was functioning properly, it should work like this:
+enqueue 10 elements --> FRONT OF QUEUE [1,2,3,4,5,6,7,8,9,10] BACK OF QUEUE
+dequeue 5 elements --> FRONT OF QUEUE [6,7,8,9,10] BACK OF QUEUE
